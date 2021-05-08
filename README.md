@@ -8,7 +8,7 @@ Esta pagina responde a la resolucion de triangulos rectangulos
 *HTML5
 *CSS3
 
-##Link al sitio: [https://ucc-labcompu2.github.io/proyecto2021-arenillas-piancatelli/Index.html](Resolucion de triangulos rectangulos)
+##Link al sitio: [https://ucc-labcompu2.github.io/proyecto2021-arenillas-piancatelli/Index.html] (Resolucion de triangulos rectangulos)
 
 ### Requisitos del Primer Parcial
 - [x] El proyecto debe estar subido al repositorio adecuado "Proyecto2021-ApellidoAlumno1-ApellidoAlumno2"
