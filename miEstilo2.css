@@ -1,61 +1,69 @@
-h1{
+h1 {
     font-size: 100px;
     font-family: 'Bebas Neue', cursive;
     text-align: center;
     margin: 1px;
 }
 
-h2{
+h2 {
 
     text-align: center;
 }
 
-h3{
+h3 {
     font-family: 'Bebas Neue', cursive;
     text-align: center;
     color: #575757;
     margin: 1px;
 }
-h4{
+
+h4 {
     margin: 1px;
     font-size: 20px;
 }
-
 
 
 .cabecera {
     text-align: center;
     font-size: 9mm;
     margin-left: 1px;
-    margin-right:  1px;
+    margin-right: 1px;
 
 }
-body{
+
+body {
     font-family: "comic sans ms";
     border: 1px;
-    margin-right:  400px;
+    margin-right: 400px;
     margin-left: 400px;
     margin-top: 100px;
     margin-bottom: 100px;
 }
-a{
+
+a {
     float: left;
 }
-b{
+
+b {
     float: left;
 }
-c{
+
+c {
     float: left;
 }
-d{
+
+d {
     float: left;
 }
-e{
+
+e {
     float: left;
 }
-f{
+
+f {
     float: left;
 }
-canvas{
+
+canvas {
     float: right;
 }
