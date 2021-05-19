@@ -2,7 +2,8 @@
 Esta pagina responde a la resolucion de triangulos rectangulos
 
 ## Autores
-* Arenillas, * Piancatelli
+* Arenillas
+* Piancatelli
 
 ## Tecnologias usadas
 *HTML5
