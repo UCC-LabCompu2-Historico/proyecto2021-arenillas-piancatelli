@@ -1,4 +1,4 @@
-# resolucion de triangulos
+# Resolución de triangulos
 Esta pagina responde a la resolucion de triangulos rectangulos
 
 ## Autores
