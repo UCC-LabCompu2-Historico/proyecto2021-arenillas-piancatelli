@@ -14,17 +14,24 @@
     <title>Simulación</title>
 </head>
 
-<body>
+<body class="mybody">
 
 <header>
-    <h4><a href="Index.html"> ◄HOME</a></h4></p>
+    <p>
+    <h4 id="home">
+        <ul>
+            <li>
+            <a href="Index.html"> ◄ HOME</a>
+    </li>
+    </ul>
+    </h4></p>
     <P>
     <h1>SIMULACIÓN</h1>
     <H3>DEL TEOREMA DE PITAGORAS</H3></P>
 
 </header>
 
-<img src="Imagenes/triangulo.jpg">
+<img src="Imagenes/triangulo.png">
 
 <form name="datos">
 <table id="Tabla_inputs" class="table table-responsive table table boardless">
@@ -44,7 +51,7 @@
             <div class="a">
                 <div class="imput-field inline">
 
-                    <label for="Anguloalfa"> α= </label><input id="Anguloalfa" type="number" placeholder="valor" onchange="triangulo(this.id, this.value)">
+                    <label for="Anguloalfa"> α= </label><input id="Anguloalfa" type="number" placeholder="valor" disabled value="α" onchange="triangulo(this.id, this.value)">
                     °
                 </div>
             </div>
@@ -67,7 +74,7 @@
             <div class="c">
                 <div>
 
-                    <label for="AnguloBeta"> β= </label><input id="AnguloBeta" type="number" placeholder="Valor" onchange="triangulo(this.id, this.value)">
+                    <label for="AnguloBeta"> β= </label><input id="AnguloBeta" type="number" placeholder="Valor" disabled value="β" onchange="triangulo(this.id, this.value)">
                     °
                 </div>
             </div>
