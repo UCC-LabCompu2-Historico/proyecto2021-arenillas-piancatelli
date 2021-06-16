@@ -4,9 +4,6 @@ function Funciones(id, value) {
     B = document.getElementById("LadoB").value;
     H = document.getElementById("LadoH").value;
 
-    alfa = document.getElementById("Anguloalfa").value;
-    beta = document.getElementById("AnguloBeta").value;
-    tita = document.getElementById("AnguloTita").value;
 
 
     if (H=='') {
@@ -52,7 +49,6 @@ function Reinicio(id, value){
 }
 
 function dibujartriangulo(){
-    alert("ENTRO");
     var canvas = document.getElementById("mycanvas");
     var ctx = canvas.getContext("2d");
 
