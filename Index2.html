@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="miEstilo2.css" type="text/css">
     <link rel="shortcut icon" href="Imagenes/favicon.png">
+    <script type="text/javascript" src="Funciones.js"></script>
     <title>Simulación</title>
 </head>
 
@@ -25,7 +26,7 @@
 
 <img src="Imagenes/triangulo.jpg">
 
-
+<form name="datos">
 <table id="Tabla_inputs" class="table table-responsive table table boardless">
     <thead>
     <tr>
@@ -43,7 +44,7 @@
             <div class="a">
                 <div class="imput-field inline">
 
-                    <label for="Anguloalfa"> α= </label><input id="Anguloalfa" type="number" placeholder="valor">
+                    <label for="Anguloalfa"> α= </label><input id="Anguloalfa" type="number" placeholder="valor" onchange="triangulo(this.id, this.value)">
                     °
                 </div>
             </div>
@@ -52,22 +53,13 @@
             <div class="b">
                 <div>
 
-                    <label for="LadoA">a= </label><input id="LadoA" type="number" placeholder="Valor">
+                    <label for="LadoA">A= </label><input id="LadoA" type="number" placeholder="Valor" onchange="triangulo(this.id, this.value)">
                     cm
 
                 </div>
             </div>
         </td>
-        <td>
-            <div class="canvas">
-                <div>
 
-                    <canvas id="myCanvas" width="200" height="200" style="border:1px solid #d3d3d3;">
-                        Your browser does not support the HTML5 canvas tag.
-                    </canvas>
-                </div>
-            </div>
-        </td>
     </tr>
 
     <tr>
@@ -75,7 +67,7 @@
             <div class="c">
                 <div>
 
-                    <label for="AnguloBeta"> β= </label><input id="AnguloBeta" type="number" placeholder="Valor">
+                    <label for="AnguloBeta"> β= </label><input id="AnguloBeta" type="number" placeholder="Valor" onchange="triangulo(this.id, this.value)">
                     °
                 </div>
             </div>
@@ -84,7 +76,7 @@
             <div class="d">
                 <div>
 
-                    <label for="LadoB"> b= </label><input id="LadoB" type="number" placeholder="Valor">
+                    <label for="LadoB"> B= </label><input id="LadoB" type="number" placeholder="Valor" onchange="triangulo(this.id, this.value)">
                     cm
 
                 </div>
@@ -96,7 +88,7 @@
             <div class="e">
                 <div>
 
-                    <label for="angulotita"> θ= </label><input id="AnguloTita" placeholder="90" disabled value="90">
+                    <label for="angulotita"> θ= </label><input id="AnguloTita" placeholder="90" disabled value="90" onchange="triangulo(this.id, this.value)">
                     °
                 </div>
             </div>
@@ -105,7 +97,7 @@
             <div class="f">
                 <div>
 
-                    <label for="LadoH"> H= </label> <input id="LadoH" type="number" placeholder="Valor">
+                    <label for="LadoH"> H= </label> <input id="LadoH" type="number" placeholder="Valor" onchange="triangulo(this.id, this.value)">
                     cm
                 </div>
             </div>
@@ -113,10 +105,23 @@
     </tr>
 
     </tbody>
+    <tr>
+        <td>
+            <div>
+                <div onload="dibujartriangulo()">
 
+                    <canvas id="mycanvas" class="canvas" width="400" height="200" style="border:1px solid #d3d3d3;">
+                        Your browser does not support the HTML5 canvas tag.
+                    </canvas>
 
+                </div>
+            </div>
+        </td>
+    </tr>
 </table>
-
+</form>
+<button id="Calcular" type="button" role="button" onclick="Funciones()" onclick="dibujar">Calcular</button>
+<button id="Reiniciar" type="button" role="button" onclick="Reinicio()">Reiniciar</button>
 </body>
 
 </html>
