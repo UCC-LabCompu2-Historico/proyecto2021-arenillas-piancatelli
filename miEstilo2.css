@@ -23,6 +23,7 @@ h4 {
     float: left;
     margin: 1px;
     font-size: 20px;
+    position: absolute;
 }
 
 
@@ -87,7 +88,7 @@ canvas {
 }
 
 #home {
-    background-color: black;
+    background-color: transparent;
     border-radius: 15px;
 }
 
@@ -103,12 +104,13 @@ canvas {
 
 #home ul li a{
     border-radius: 16px;
-    color: white;
+    color: #000000;
     text-decoration: none;
     display: block ;
     padding: 10px 50px;
 }
 
 #home a:hover{
-    background-color: #f30606;
+    background-color: #000000;
+    color: white;
 }

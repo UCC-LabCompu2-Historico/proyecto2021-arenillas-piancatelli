@@ -21,10 +21,11 @@
     <h4 id="home">
         <ul>
             <li>
-            <a href="Index.html"> ◄ HOME</a>
-    </li>
-    </ul>
+                <a href="Index0.html"> ◄ HOME</a>
+            </li>
+        </ul>
     </h4></p>
+    <br>
     <P>
     <h1>SIMULACIÓN</h1>
     <H3>DEL TEOREMA DE PITAGORAS</H3></P>
@@ -34,100 +35,103 @@
 <img src="Imagenes/triangulo.png">
 
 <form name="datos">
-<table id="Tabla_inputs" class="table table-responsive table table boardless">
-    <thead>
-    <tr>
-        <h3>
-            <th class="cabecera" scope="col">Ángulos:</th>
-        </h3>
-        <h3>
-            <th class="cabecera" scope="col">Lados:</th>
-        </h3>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-        <td>
-            <div class="a">
-                <div class="imput-field inline">
+    <table id="Tabla_inputs" class="table table-responsive table table boardless">
+        <thead>
+        <tr>
+            <h3>
+                <th class="cabecera" scope="col">Ángulos:</th>
+            </h3>
+            <h3>
+                <th class="cabecera" scope="col">Lados:</th>
+            </h3>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>
+                <div class="a">
+                    <div class="imput-field inline">
 
-                    <label for="Anguloalfa"> α= </label><input id="Anguloalfa" type="number" placeholder="valor" disabled value="α" onchange="triangulo(this.id, this.value)">
-                    °
+                        <label for="Anguloalfa"> α= </label><input id="Anguloalfa" type="number" placeholder="valor" onchange="triangulo(this.id, this.value)">
+                        °
+                    </div>
                 </div>
-            </div>
-        </td>
-        <td>
-            <div class="b">
+            </td>
+            <td>
+                <div class="b">
+                    <div>
+
+                        <label for="LadoA">A= </label><input id="LadoA" type="number" placeholder="Valor" onchange="triangulo(this.id, this.value)">
+                        cm
+
+                    </div>
+                </div>
+            </td>
+
+        </tr>
+
+        <tr>
+            <td>
+                <div class="c">
+                    <div>
+
+                        <label for="AnguloBeta"> β= </label><input id="AnguloBeta" type="number" placeholder="Valor" onchange="triangulo(this.id, this.value)">
+                        °
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="d">
+                    <div>
+
+                        <label for="LadoB"> B= </label><input id="LadoB" type="number" placeholder="Valor" onchange="triangulo(this.id, this.value)">
+                        cm
+
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="e">
+                    <div>
+
+                        <label for="angulotita"> θ= </label><input id="AnguloTita" placeholder="90" disabled value="90" onchange="triangulo(this.id, this.value)">
+                        °
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="f">
+                    <div>
+
+                        <label for="LadoH"> H= </label> <input id="LadoH" type="number" placeholder="Valor" onchange="triangulo(this.id, this.value)">
+                        cm
+                    </div>
+                </div>
+            </td>
+        </tr>
+
+        </tbody>
+
+        <table>
+        <tr>
+            <td>
                 <div>
+                    <div onload="dibujartriangulo()">
 
-                    <label for="LadoA">A= </label><input id="LadoA" type="number" placeholder="Valor" onchange="triangulo(this.id, this.value)">
-                    cm
+                        <canvas id="mycanvas" class="canvas" width="1500" height="1000" style="border:1px solid #d3d3d3;">
+                            Your browser does not support the HTML5 canvas tag.
+                        </canvas>
 
+                    </div>
                 </div>
-            </div>
-        </td>
-
-    </tr>
-
-    <tr>
-        <td>
-            <div class="c">
-                <div>
-
-                    <label for="AnguloBeta"> β= </label><input id="AnguloBeta" type="number" placeholder="Valor" disabled value="β" onchange="triangulo(this.id, this.value)">
-                    °
-                </div>
-            </div>
-        </td>
-        <td>
-            <div class="d">
-                <div>
-
-                    <label for="LadoB"> B= </label><input id="LadoB" type="number" placeholder="Valor" onchange="triangulo(this.id, this.value)">
-                    cm
-
-                </div>
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <div class="e">
-                <div>
-
-                    <label for="angulotita"> θ= </label><input id="AnguloTita" placeholder="90" disabled value="90" onchange="triangulo(this.id, this.value)">
-                    °
-                </div>
-            </div>
-        </td>
-        <td>
-            <div class="f">
-                <div>
-
-                    <label for="LadoH"> H= </label> <input id="LadoH" type="number" placeholder="Valor" onchange="triangulo(this.id, this.value)">
-                    cm
-                </div>
-            </div>
-        </td>
-    </tr>
-
-    </tbody>
-    <tr>
-        <td>
-            <div>
-                <div onload="dibujartriangulo()">
-
-                    <canvas id="mycanvas" class="canvas" width="400" height="200" style="border:1px solid #d3d3d3;">
-                        Your browser does not support the HTML5 canvas tag.
-                    </canvas>
-
-                </div>
-            </div>
-        </td>
-    </tr>
-    <button id="Calcular" type="button" role="button" onclick="Funciones()" onclick="dibujar">Calcular</button>
-    <button id="Reiniciar" type="button" role="button" onclick="Reinicio()">Reiniciar</button>
-</table>
+            </td>
+        </tr>
+        <button id="Calcular" type="button" role="button" onclick="Funciones()" onclick="dibujar">Calcular</button>
+        <button id="Reiniciar" type="button" role="button" onclick="Reinicio()">Reiniciar</button>
+        </table>
+        </table>
 </form>
 
 </body>

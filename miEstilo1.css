@@ -4,63 +4,39 @@ h1 {
     text-align: center;
 
 }
-#simulacion {
-    background-color: black;
-    border-radius: 15px;
-}
-
-#simulacion ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-
-}
-#simulacion ul li{
-    display: inline-block;
-}
-
-#simulacion ul li a{
-    border-radius: 16px;
-    color: white;
-    text-decoration: none;
-    display: block ;
-    padding: 20px 300px;
-}
-
-#simulacion a:hover{
-    background-color: #f30606;
-}
+#menu{
 
 
-
-
-#menu {
-    background-color: black;
-    border-radius: 15px;
 }
 
 #menu ul{
     list-style: none;
-    margin: 0;
+    margin-top: 0px;
     padding: 0;
-
 }
+
 #menu ul li{
     display: inline-block;
 }
 
 #menu ul li a{
-    border-radius: 16px;
-    color: white;
+    border-radius: 15px;
+    background-color: transparent;
+    color: #000000;
+    display: block;
+    padding: 20px 130px;
     text-decoration: none;
-    display: block ;
-    padding: 20px 80px;
 }
 
-#menu a:hover{
-    background-color: #f30606;
+#menu ul li a:hover{
+    color: #ffffff;
+    border-radius: 15px;
+    background-color: #000000;
 }
 
+.item-r{
+    float: right;
+}
 
 h4 {
     font-size: 45px;
@@ -91,7 +67,7 @@ body {
     float: right;
 }
 
-div{
+section{
     border: 2px solid #ffffff;
     margin: 10px;
     padding: 5px 30px;
@@ -108,4 +84,40 @@ div{
     50% {background-position: 100% 50%}
     100% {background-position: 0% 50%}
 
+}
+
+
+#home {
+    float: left;
+    margin: 1px;
+    font-size: 20px;
+    position: absolute;
+}
+
+#home {
+    background-color: transparent;
+    border-radius: 15px;
+}
+
+#home ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+#home ul li{
+    display: inline-block;
+}
+
+#home ul li a{
+    border-radius: 16px;
+    color: white;
+    text-decoration: none;
+    display: block ;
+    padding: 10px 50px;
+}
+
+#home a:hover{
+    background-color: #000000;
+    color: white;
 }
