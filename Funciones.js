@@ -148,72 +148,15 @@ function Reinicio(id, value){
 
 
 
-function dibujar() {
-    animar();
-}
+function dibujartrian(){
+
+    var canvas = document.getElementById("mycanvas");
+    var ctx = canvas.getContext("2d");
 
 
-/**
- * La funcion aqui abajo realiza la animacion del triangulo correspondiente a los datos ingresados/calculados.
- * El dibujo animado se hace sobre un canvas
- * @method animar
- */
-var chequeoB=0;
-var chequeoA=0;
-var mov=0;
-var mov1=0;
-
-function animar() {
-
-    if (contador == 1) {
-
-        var canvas = document.getElementById("myCanvas");
-        var ctx = canvas.getContext("2d");
-        canvas.width = canvas.width
-        var base = parseInt(document.getElementById("LadoB").value);
-        var altura = parseInt(document.getElementById("LadoA").value);
-        var flag = 1;
-
-        var Xmedia = ((canvas.width / 2) - 120);
-        var Ymedia = ((canvas.height / 2) + 50);
-
-        var animacion = requestAnimationFrame(animar);
-
-        context.beginPath();
-        context.moveTo(Xmedia, Ymedia);
-        mov = Xmedia + chequeoB;
-        mov1 = Ymedia - chequeoA;
-
-        if (chequeoB != base) {
-            context.clearRect(0, 0, canvas.width, canvas.height);
-
-            context.lineTo(mov, Ymedia);
-            chequeoB += (1 / 4);
-
-        }
-
-        if (chequeoA != altura && chequeoB == base) {
-            context.moveTo(mov, Ymedia);
-            context.lineTo(mov, mov1);
-            chequeoA += 1 / 4;
-        }
-
-        if (chequeoA == altura && chequeoB == base) {
-            context.moveTo(mov, mov1);
-            context.lineTo(Xmedia, Ymedia);
-            chequeoA += 1 / 4;
-            cancelAnimationFrame(animacion);
-        }
-
-        //Contorno
-        context.lineWidth = 2;
-        context.strokeStyle = '#000000';
-        context.lineCap = "round";
-        context.stroke();
-    }
+var yMax = canvas.height;
+var margen = 5;
+ctx.fillStyle = "#000000";
+ctx.fillRect(0, yMax-40-margen, 40, 40)
 
 }
-
-
-
-
