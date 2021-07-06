@@ -68,9 +68,6 @@ f {
     float: left;
 }
 
-canvas {
-    float: right;
-}
 
 
 
@@ -113,4 +110,14 @@ canvas {
 #home a:hover{
     background-color: #000000;
     color: white;
+}
+
+#mycanvas{
+
+    margin-bottom: 0;
+    border: 3px black;
+    width: 1500px;
+    height: 450px;
+    background-color: whitesmoke;
+
 }
