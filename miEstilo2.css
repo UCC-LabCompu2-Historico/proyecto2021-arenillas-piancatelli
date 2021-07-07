@@ -38,9 +38,9 @@ h4 {
 body {
     font-family: "comic sans ms";
     border: 1px;
-    margin-right: 400px;
-    margin-left: 400px;
-    margin-top: 100px;
+    margin-right: 200px;
+    margin-left: 200px;
+    margin-top: 5px;
     margin-bottom: 100px;
 }
 
@@ -74,7 +74,7 @@ f {
 .mybody{
     background: linear-gradient(150deg, #ffffff, #8e95f3, #d199f6);
     background-size: 400% 300%;
-    animation: BgGradient 10s ease infinite
+    animation: BgGradient 10s ease infinite;
 }
 
 @keyframes BgGradient {
@@ -118,5 +118,14 @@ f {
     border: 3px black;
 
     background-color: whitesmoke;
+
+}
+
+
+#imagen {
+
+    position:
+
+            absolute; right: 100px;
 
 }

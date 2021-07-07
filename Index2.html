@@ -14,9 +14,9 @@
     <title>Simulación</title>
 </head>
 
-<body class="mybody">
+<body class="mybody" >
 
-<header>
+<header id="header">
     <p>
     <h4 id="home">
         <ul>
@@ -32,14 +32,16 @@
 
 </header>
 
-<img src="Imagenes/triangulo.png">
+
 
 <form name="datos">
     <table id="Tabla_inputs" class="table table-responsive table table boardless">
         <thead>
+
         <tr>
             <h3>
                 <th class="cabecera" scope="col">Ángulos:</th>
+
             </h3>
             <h3>
                 <th class="cabecera" scope="col">Lados:</th>
@@ -105,7 +107,7 @@
                 <div class="f">
                     <div>
 
-                        <label for="LadoH"> H= </label> <input id="LadoH" type="number" placeholder="Valor" onchange="triangulo(this.id, this.value)">
+                        <label for="LadoH"> H= </label> <input id="LadoH" type="number" placeholder="Valor" onchange="triangulo(this.id, this.value)" >
                         cm
                     </div>
                 </div>
@@ -115,12 +117,14 @@
         </tbody>
 
         <table>
-        <tr>
+            <img id="imagen" src="Imagenes/triangulo.png">
+
+            <tr>
             <td>
                 <div>
-                    <div onload="dibujartrian()">
+                    <div >
 
-                        <canvas id="mycanvas" class="canvas"  width="1500px" height="450px">
+                        <canvas id="mycanvas" class="canvas"  width="800px" height="600px" >
                             Your browser does not support the HTML5 canvas tag.
                         </canvas>
 
@@ -128,7 +132,7 @@
                 </div>
             </td>
         </tr>
-        <button id="Calcular" type="button" role="button" onclick="Funciones(); dibujar()">Calcular</button>
+        <button id="Calcular" type="button" role="button" onclick="Funciones(); setInterval(dibujar, 1)">Calcular</button>
         <button id="Reiniciar" type="button" role="button" onclick="Reinicio()">Reiniciar</button>
         </table>
         </table>
