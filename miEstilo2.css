@@ -36,14 +36,14 @@ h4 {
 }
 
 body {
-    font-family: Roboto,sans-serif;
+    font-family: Roboto, sans-serif;
     border: 1px;
     margin-right: 200px;
     margin-left: 200px;
     margin-top: 5px;
     margin-bottom: 100px;
-    font-weight:900;
-    letter-spacing:.045em
+    font-weight: 900;
+    letter-spacing: .045em
 }
 
 a {
@@ -71,18 +71,22 @@ f {
 }
 
 
-
-
-.mybody{
+.mybody {
     background: linear-gradient(150deg, #ffffff, #8e95f3, #d199f6);
     background-size: 400% 300%;
     animation: BgGradient 10s ease infinite;
 }
 
 @keyframes BgGradient {
-    0% {background-position: 0% 50%}
-    50% {background-position: 100% 50%}
-    100% {background-position: 0% 50%}
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
 
 }
 
@@ -91,30 +95,31 @@ f {
     border-radius: 15px;
 }
 
-#home ul{
+#home ul {
     list-style: none;
     margin: 0;
     padding: 0;
 
 }
-#home ul li{
+
+#home ul li {
     display: inline-block;
 }
 
-#home ul li a{
+#home ul li a {
     border-radius: 16px;
     color: #000000;
     text-decoration: none;
-    display: block ;
+    display: block;
     padding: 10px 50px;
 }
 
-#home a:hover{
+#home a:hover {
     background-color: #000000;
     color: white;
 }
 
-#mycanvas{
+#mycanvas {
 
     margin-bottom: 0;
     border: 3px black;
@@ -126,9 +131,9 @@ f {
 
 #imagen {
 
-    position:
-
-            absolute; right: 250px; top: 240px;
+    position: absolute;
+    right: 250px;
+    top: 240px;
 
 }
 
@@ -137,16 +142,15 @@ f {
     grid-template-columns: 500px 500px;
 
 
-
 }
 
-.grid div{
+.grid div {
 
 
-    padding: 4px ;
+    padding: 4px;
 }
 
-#Calcular{
+#Calcular {
     padding: 10px;
     border: 2px solid transparent;
     border-radius: 20px;
@@ -155,9 +159,7 @@ f {
 }
 
 
-
-
-#Reiniciar{
+#Reiniciar {
     padding: 10px;
     border: 2px solid transparent;
     background: rgba(206, 0, 0, 0.56);

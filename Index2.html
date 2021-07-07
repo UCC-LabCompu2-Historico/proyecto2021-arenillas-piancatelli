@@ -14,7 +14,7 @@
     <title>Simulación</title>
 </head>
 
-<body class="mybody" >
+<body class="mybody">
 
 <header id="header">
     <p>
@@ -24,7 +24,8 @@
                 <a href="Index0.html"> ◄ HOME</a>
             </li>
         </ul>
-    </h4></p>
+    </h4>
+    </p>
     <br>
     <P>
     <h1>SIMULACIÓN</h1>
@@ -33,59 +34,63 @@
 </header>
 
 
-
 <form name="datos">
     <table id="Tabla_inputs" class="table table-responsive table table boardless">
         <img id="imagen" src="Imagenes/triangulo.png">
         <div class="grid">
-            <div  class="cabecera" scope="col">
+            <div class="cabecera" scope="col">
                 Ángulos
             </div>
             <div class="cabecera" scope="col">
-            Lados
+                Lados
             </div>
 
-                <div class="a">
-                    <div class="imput-field inline">
+            <div class="a">
+                <div class="imput-field inline">
 
-                        <label for="Anguloalfa"> α= </label><input id="Anguloalfa" type="number" placeholder="valor" onchange="triangulo(this.id, this.value)">
-                        °
-                    </div>
+                    <label for="Anguloalfa"> α= </label><input id="Anguloalfa" type="number" placeholder="valor"
+                                                               onchange="triangulo(this.id, this.value)">
+                    °
                 </div>
+            </div>
 
 
-                <div class="b">
-                    <div>
+            <div class="b">
+                <div>
 
-                    <label for="LadoA">A= </label><input id="LadoA" type="number" placeholder="Valor" onchange="triangulo(this.id, this.value)">
+                    <label for="LadoA">A= </label><input id="LadoA" type="number" placeholder="Valor"
+                                                         onchange="triangulo(this.id, this.value)">
                     cm
 
-                    </div>
                 </div>
+            </div>
 
 
-                <div class="c">
-                    <div>
+            <div class="c">
+                <div>
 
-                        <label for="AnguloBeta"> β= </label><input id="AnguloBeta" type="number" placeholder="Valor" onchange="triangulo(this.id, this.value)">
-                        °
-                    </div>
+                    <label for="AnguloBeta"> β= </label><input id="AnguloBeta" type="number" placeholder="Valor"
+                                                               onchange="triangulo(this.id, this.value)">
+                    °
                 </div>
+            </div>
 
 
-                    <div class="d">
-                        <div>
+            <div class="d">
+                <div>
 
-                        <label for="LadoB"> B= </label><input id="LadoB" type="number" placeholder="Valor" onchange="triangulo(this.id, this.value)">
-                        cm
+                    <label for="LadoB"> B= </label><input id="LadoB" type="number" placeholder="Valor"
+                                                          onchange="triangulo(this.id, this.value)">
+                    cm
 
-                        </div>
-                    </div>
+                </div>
+            </div>
 
             <div class="e">
                 <div>
 
-                    <label for="angulotita"> θ= </label><input id="AnguloTita" placeholder="90" disabled value="90" onchange="triangulo(this.id, this.value)">
+                    <label for="angulotita"> θ= </label><input id="AnguloTita" placeholder="90" disabled value="90"
+                                                               onchange="triangulo(this.id, this.value)">
                     °
                 </div>
             </div>
@@ -93,11 +98,11 @@
             <div class="f">
                 <div>
 
-                    <label for="LadoH"> H= </label> <input id="LadoH" type="number" placeholder="Valor" onchange="triangulo(this.id, this.value)" >
+                    <label for="LadoH"> H= </label> <input id="LadoH" type="number" placeholder="Valor"
+                                                           onchange="triangulo(this.id, this.value)">
                     cm
                 </div>
             </div>
-
 
 
         </div>
@@ -106,16 +111,17 @@
 
 
             <tr>
-            <td>
-                        <canvas id="mycanvas" class="canvas"  width="1600px" height="600px" >
-                            Your browser does not support the HTML5 canvas tag.
-                        </canvas>
-            </td>
-        </tr>
-        <button id="Calcular" type="button" role="button" onclick="Funciones(); setInterval(dibujar, 1)">CALCULAR</button>
-        <button id="Reiniciar" type="button" role="button" onclick="Reinicio()">REINICIAR</button>
+                <td>
+                    <canvas id="mycanvas" class="canvas" width="1600px" height="600px">
+                        Your browser does not support the HTML5 canvas tag.
+                    </canvas>
+                </td>
+            </tr>
+            <button id="Calcular" type="button" role="button" onclick="Funciones(); setInterval(dibujar, 1)">CALCULAR
+            </button>
+            <button id="Reiniciar" type="button" role="button" onclick="Reinicio()">REINICIAR</button>
         </table>
-        </table>
+    </table>
 </form>
 
 </body>

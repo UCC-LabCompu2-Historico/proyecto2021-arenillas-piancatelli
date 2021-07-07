@@ -4,22 +4,23 @@ h1 {
     text-align: center;
 
 }
-#menu{
+
+#menu {
 
 
 }
 
-#menu ul{
+#menu ul {
     list-style: none;
     margin-top: 0px;
     padding: 0;
 }
 
-#menu ul li{
+#menu ul li {
     display: inline-block;
 }
 
-#menu ul li a{
+#menu ul li a {
     border-radius: 15px;
     background-color: transparent;
     color: #000000;
@@ -28,13 +29,13 @@ h1 {
     text-decoration: none;
 }
 
-#menu ul li a:hover{
+#menu ul li a:hover {
     color: #ffffff;
     border-radius: 15px;
     background-color: #000000;
 }
 
-.item-r{
+.item-r {
     float: right;
 }
 
@@ -67,22 +68,28 @@ body {
     float: right;
 }
 
-section{
+section {
     border: 2px solid #ffffff;
     margin: 10px;
     padding: 5px 30px;
 }
 
-.mybody{
+.mybody {
     background: linear-gradient(150deg, #eba102, #cd2795, #00c298);
     background-size: 400% 300%;
     animation: BgGradient 10s ease infinite
 }
 
 @keyframes BgGradient {
-    0% {background-position: 0% 50%}
-    50% {background-position: 100% 50%}
-    100% {background-position: 0% 50%}
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
 
 }
 
@@ -99,25 +106,26 @@ section{
     border-radius: 15px;
 }
 
-#home ul{
+#home ul {
     list-style: none;
     margin: 0;
     padding: 0;
 
 }
-#home ul li{
+
+#home ul li {
     display: inline-block;
 }
 
-#home ul li a{
+#home ul li a {
     border-radius: 16px;
     color: white;
     text-decoration: none;
-    display: block ;
+    display: block;
     padding: 10px 50px;
 }
 
-#home a:hover{
+#home a:hover {
     background-color: #000000;
     color: white;
 }
