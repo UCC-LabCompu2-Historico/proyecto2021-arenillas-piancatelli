@@ -28,20 +28,22 @@ h4 {
 
 
 .cabecera {
-    text-align: center;
-    font-size: 9mm;
-    margin-left: 1px;
+    text-align: left;
+    font-size: 7mm;
+    margin-left: 60px;
     margin-right: 1px;
 
 }
 
 body {
-    font-family: "comic sans ms";
+    font-family: Roboto,sans-serif;
     border: 1px;
     margin-right: 200px;
     margin-left: 200px;
     margin-top: 5px;
     margin-bottom: 100px;
+    font-weight:900;
+    letter-spacing:.045em
 }
 
 a {
@@ -126,6 +128,39 @@ f {
 
     position:
 
-            absolute; right: 100px;
+            absolute; right: 250px; top: 240px;
 
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 500px 500px;
+
+
+
+}
+
+.grid div{
+
+
+    padding: 4px ;
+}
+
+#Calcular{
+    padding: 10px;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    background: rgba(0, 206, 0, 0.56);
+    cursor: pointer;
+}
+
+
+
+
+#Reiniciar{
+    padding: 10px;
+    border: 2px solid transparent;
+    background: rgba(206, 0, 0, 0.56);
+    cursor: pointer;
+    border-radius: 20px;
 }
