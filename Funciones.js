@@ -1,3 +1,11 @@
+/**
+ * Esta funcion realiza el calculo de los datos faltantes del triangulo rectangulo que se desea obtener.
+ * Para ello primero analiza que datos ha ingresado el usuario y en base a eso, realiza el calculo correspondiente.
+ * @method Funciones
+ */
+
+
+
 function Funciones(id, value) {
     R = 0;
     A = document.getElementById("LadoA").value;
@@ -164,7 +172,11 @@ function Funciones(id, value) {
 
 
 
-
+/**
+ * La funcion Reinicio reinicia todos los inputs a su valor original y limpia el canvas, con el objetivo de que el usuario
+ * realice nuevamente un calculo.
+ * @method Reinicio
+ */
 
 
 
@@ -193,6 +205,18 @@ dx=0.8;
 y=0;
 dy=0.8;
 R=0;
+
+
+
+
+/**
+ * La funcion dibujar dibuja sobre un canvas el triangulo animado segun los datos obtenidos del triangulo.
+ * @method dibujar
+ */
+
+
+
+
 function dibujar() {
     if (R == 0) {
 
